@@ -2,7 +2,7 @@
 
 
 ##Install
-In order to compile and run this code, please install PCRE2 library.
+In order to compile and run this code, please install PCRE library.
 
 ##Build
 In order to compile this code, run in a terminal window:
