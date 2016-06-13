@@ -4,13 +4,12 @@
 #include <string>
 
 /**
- * Utils class with helpers methods.
+ * Utils namespace with helpers functions.
  */
 
-class Utils {
-public:
-    static int find_int(const std::string & str, int start);
-    static int to_int(const std::string & str, int start, int end);
+namespace utils {
+    int find_int(const std::string & str, int start);
+    int to_int(const std::string & str, int start, int end);
 };
 
 #endif

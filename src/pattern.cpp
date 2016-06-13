@@ -80,9 +80,9 @@ string Pattern::spaced_pattern(int num) {
 // helper method to generate spaced pattern due to its complexity
 string Pattern::process_spaced_pattern(const string & str, int & i) {
     int start = i+1;
-    int end = Utils::find_int(str, start);
+    int end = utils::find_int(str, start);
     i = end+1;
-    return spaced_pattern(Utils::to_int(str, start, end+1));
+    return spaced_pattern(utils::to_int(str, start, end+1));
 }
 
 // Parser method to transform input pattern into
@@ -98,7 +98,7 @@ string Pattern::build_pattern(const string & str) {
             if (str[i+1] != '{') {
                 ss << str[i];
             } else {
-                i = Utils::find_int(str, i+2) + 1; // skip group number
+                i = utils::find_int(str, i+2) + 1; // skip group number
                 if (str[i] == '}') {
                     ss << normal_pattern();
                 } else {
