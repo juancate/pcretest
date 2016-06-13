@@ -1,0 +1,4 @@
+foo %{0} is a %{1S0}
+foo %{0} is a %{1}
+the %{0S1} %{1} ran away
+bar %{0G} foo %{1}
