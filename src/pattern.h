@@ -1,8 +1,9 @@
 #ifndef PATTERN_H
 #define PATTERN_H
 
-#define PCRE2_CODE_UNIT_WIDTH 8
-#include <pcre2.h>
+#define OVECCOUNT 30
+
+#include <pcre.h>
 
 #include <string>
 
@@ -13,8 +14,7 @@
 class Pattern {
     std::string _pattern;
     // PCRE2 attributes
-    pcre2_code *re;
-    pcre2_match_data *match_data;
+    pcre *re;
 public:
     Pattern(const std::string & str);
     virtual ~Pattern();

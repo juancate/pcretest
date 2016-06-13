@@ -1,5 +1,5 @@
-CFLAGS=`pcre2-config --cflags` -Isrc/
-CLIBS=`pcre2-config --libs8`
+CFLAGS=`pcre-config --cflags` -Isrc/
+CLIBS=`pcre-config --libs`
 OBJS = main.o pattern.o utils.o
 CPPS = src/main.cpp src/pattern.cpp src/utils.cpp
 BIN = patt
