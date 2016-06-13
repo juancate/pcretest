@@ -5,7 +5,7 @@ using namespace std;
 int Utils::find_int(const string & str, int start) {
     int end = start;
     int length = str.size();
-    while (isdigit(str[end])) {
+    while (end < length && isdigit(str[end])) {
         end++;
     }
     return end-1;
