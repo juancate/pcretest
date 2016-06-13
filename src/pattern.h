@@ -6,6 +6,10 @@
 
 #include <string>
 
+/**
+ * Class to represent the pattern behaviour.
+ */
+
 class Pattern {
     std::string _pattern;
     // PCRE2 attributes

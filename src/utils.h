@@ -3,6 +3,10 @@
 
 #include <string>
 
+/**
+ * Utils class with helpers methods.
+ */
+
 class Utils {
 public:
     static int find_int(const std::string & str, int start);
